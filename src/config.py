@@ -1,0 +1,19 @@
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = PROJECT_ROOT / "data"
+RAW_DIR = DATA_DIR / "raw"
+PROCESSED_DIR = DATA_DIR / "processed"
+OUTPUT_DIR = DATA_DIR / "outputs"
+
+START_YEAR_MIN = 2005
+START_YEAR_MAX = 2019
+COUNTRY_FILTER = "United Kingdom"
+CONDITION_FILTER = "cancer"
+PHASE_FILTER = "PHASE3"
+
+# Placeholder cost assumptions
+PLANNED_PATIENTS = 500
+COST_PER_PATIENT = 30_000
+SETUP_COST = 2_500_000
+FULL_COST = PLANNED_PATIENTS * COST_PER_PATIENT + SETUP_COST

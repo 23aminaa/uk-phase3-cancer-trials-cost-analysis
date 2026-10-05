@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+
+# Build outputs
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local data and outputs
+/data/raw/
+/data/processed/
+/data/outputs/
+
+# Keep directory structure without tracking generated files
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/outputs/.gitkeep
